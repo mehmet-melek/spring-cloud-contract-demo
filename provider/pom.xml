@@ -8,9 +8,10 @@
         <version>0.1.0</version>
     </parent>
     <groupId>org.melek</groupId>
-    <artifactId>consumer</artifactId>
+    <artifactId>provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Consumer for SCC</name>
-    <description>Demo project for SCC consumer</description>
+    <name>Provider for SCC</name>
+    <description>Demo project for SCC Provider</description>
+
 
 </project>
