@@ -11,7 +11,7 @@ public class DeclanController {
             produces = "application/json")
     @ResponseBody()
     String whoTheHellAreYou(@RequestParam(name = "youKnow") String parameter) {
-        return parameter.contains("say my name") ? "Heisenberg" : "Who the hell are you!" ;
+        return parameter.contains("say-my-name") ? "Heisenberg" : "Who the hell are you!";
     }
 }
 

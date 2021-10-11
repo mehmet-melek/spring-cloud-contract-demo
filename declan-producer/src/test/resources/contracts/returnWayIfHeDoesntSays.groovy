@@ -5,9 +5,9 @@ Contract.make {
     description("if parameter contains 'say my name' return Heisenberg")
     request {
         method GET()
-        url("whoTheHellAreYou") {
+        url("/whoTheHellAreYou") {
             queryParameters {
-                parameter("youKnow", "some dummy words")
+                parameter("youKnow", "some-dummy-words")
             }
         }
         headers {
