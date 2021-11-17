@@ -59,19 +59,6 @@
 				<configuration>
 					<baseClassForTests>org.melek.producerwarehouse.WarehouseControllerContactsBase</baseClassForTests>
 					<testFramework>JUNIT5</testFramework>
-					<contractsRepositoryUrl>git://https://github.com/mehmet-melek/producer-contracts.git
-					</contractsRepositoryUrl>
-					<contractsProperties>
-						<git.branch>main</git.branch> <!-- Default branch is master -->
-						<!-- <contractsRepositoryUsername>${GITHUB_USER}</contractsRepositoryUsername>
-                         <contractsRepositoryPassword>${GITHUB_TOKEN}</contractsRepositoryPassword> -->
-					</contractsProperties>
-					<contractDependency>
-						<groupId>${project.groupId}</groupId>
-						<artifactId>${project.artifactId}</artifactId>
-						<version>${project.version}</version>
-					</contractDependency>
-					<contractsMode>LOCAL</contractsMode>
 				</configuration>
 			</plugin>
 			<plugin>
