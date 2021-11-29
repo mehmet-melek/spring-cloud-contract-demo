@@ -37,7 +37,7 @@ class OrderServiceTest {
                         .withStatus(404)
                         .withBody("Warehouse Message : Product not found!")));
 
-        order = new Order("ABC", 10);
+        order = new Order("XXX", 10);
         String result = orderService.createOrder(order);
         assertThat(result)
                 .contains("The order could not be created.")
@@ -53,7 +53,7 @@ class OrderServiceTest {
                 .willReturn(aResponse()
                         .withStatus(404)
                         .withBody("Warehouse Message : Not enough products were found!")));
-        order = new Order("ABC", 10);
+        order = new Order("ABC", 5);
         String result = orderService.createOrder(order);
         assertThat(result)
                 .contains("The order could not be created.")

@@ -7,11 +7,11 @@ import org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class TestOrderService_WithProducerStubs {
+public class OrderServiceWithProducerStubTest {
 
     @RegisterExtension
     static StubRunnerExtension stubRunnerExtension = new StubRunnerExtension()
-            .stubsMode(StubRunnerProperties.StubsMode.LOCAL)
+            .stubsMode(StubRunnerProperties.StubsMode.CLASSPATH)
             .downloadStub("org.melek", "producer-warehouse", "+", "stubs")
             .withPort(8081);
 
