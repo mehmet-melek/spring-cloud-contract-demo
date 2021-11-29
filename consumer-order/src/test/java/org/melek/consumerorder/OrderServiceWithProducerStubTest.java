@@ -11,7 +11,7 @@ public class OrderServiceWithProducerStubTest {
 
     @RegisterExtension
     static StubRunnerExtension stubRunnerExtension = new StubRunnerExtension()
-            .stubsMode(StubRunnerProperties.StubsMode.CLASSPATH)
+            .stubsMode(StubRunnerProperties.StubsMode.LOCAL)
             .downloadStub("org.melek", "producer-warehouse", "+", "stubs")
             .withPort(8081);
 
